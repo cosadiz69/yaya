@@ -80,7 +80,6 @@ def direct_link_generator(link: str):
    # """ ZippyShare direct link generator
     #Based on https://github.com/zevtyardt/lk21 """
     #return Bypass().bypass_zippyshare(url)
-
 def zippy_share(url: str) -> str:
     try:
         link = re_findall(r'\bhttps?://.*zippyshare\.com\S+', url)[0]
@@ -98,6 +97,7 @@ def zippy_share(url: str) -> str:
         return base_url + js_content[0] + str(value) + js_content[2]
     except IndexError:
         raise DirectDownloadLinkException("ERROR: Can't find download button")
+
 
 def yandex_disk(url: str) -> str:
     """ Yandex.Disk direct link generator
