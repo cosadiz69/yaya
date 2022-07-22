@@ -80,7 +80,6 @@ def direct_link_generator(link: str):
     #""" ZippyShare direct link generator
     #Based on https://github.com/zevtyardt/lk21 """
     #return Bypass().bypass_zippyshare(url)
-
 def zippy_share(url: str) -> str:
     """ ZippyShare direct link generator
     Based on https://github.com/zevtyardt/lk21 """
