@@ -76,10 +76,15 @@ def direct_link_generator(link: str):
     else:
         raise DirectDownloadLinkException(f'No Direct link function found for {link}')
 
+#def zippy_share(url: str) -> str:
+    #""" ZippyShare direct link generator
+    #Based on https://github.com/zevtyardt/lk21 """
+    #return Bypass().bypass_zippyshare(url)
+
 def zippy_share(url: str) -> str:
     """ ZippyShare direct link generator
     Based on https://github.com/zevtyardt/lk21 """
-    return Bypass().bypass_zippyshare(url
+    return Bypass().bypass_zippyshare(url)
 
 def yandex_disk(url: str) -> str:
     """ Yandex.Disk direct link generator
